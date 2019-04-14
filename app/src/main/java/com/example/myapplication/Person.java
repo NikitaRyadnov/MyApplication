@@ -1,14 +1,14 @@
 package com.example.myapplication;
 
 public class Person {
-    private String Id;
+    private int Id;
     private String FirstName;
     private String LastName;
     private String Email;
     private String Login;
     private String Password;
 
-    Person(String Id, String FName, String LName, String Email, String Login, String Pass){
+    Person(int Id, String FName, String LName, String Email, String Login, String Pass){
         this.Id = Id;
         this.FirstName = FName;
         this.LastName = LName;
@@ -17,7 +17,7 @@ public class Person {
         this.Password = Pass;
     }
 
-    public String getId(){
+    public int getId(){
         return Id;
     }
     public String getFirstName(){
