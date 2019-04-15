@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText login;
     private EditText pass;
     private TextView label;
-    DemoDataProvider data;
+    IDataProvider data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

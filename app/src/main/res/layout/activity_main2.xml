@@ -33,11 +33,13 @@
         android:id="@+id/Pass1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="Password" />
     <EditText
         android:id="@+id/RPass1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="Retype password" />
 
     <Button

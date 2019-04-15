@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     private EditText pass;
     private EditText rpass;
     private TextView label;
-    DemoDataProvider data;
+    IDataProvider data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +55,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                 }
                 if (boolId) {
                     data.addPerson(new Person(i, Sname, Slname, Smail, Slogin, Spass));
+                    label.setText(" ");
                     break;
                 }
             }
