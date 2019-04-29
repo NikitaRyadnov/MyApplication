@@ -55,7 +55,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                 }
                 if (boolId) {
                     data.addPerson(new Person(i, Sname, Slname, Smail, Slogin, Spass));
-                    label.setText(" ");
+                    label.setText("Вы успешно зарегестрировались!");
                     break;
                 }
             }
