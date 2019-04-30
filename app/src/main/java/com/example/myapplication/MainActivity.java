@@ -55,8 +55,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.reg:
                 //label.setText("Вход выполнен!");
-                Intent intent = new Intent(this, Main2Activity.class);
+                Intent intent = new Intent(this, Main3Activity.class);
                 startActivity(intent);
+                break;
+            case R.id.category1:
+                Intent intent1 = new Intent(this, Main2Activity.class);
+                startActivity(intent1);
                 break;
         }
     }

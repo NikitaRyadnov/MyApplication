@@ -9,8 +9,7 @@ public class MockupDataProvider implements IDataProvider {
 
     public MockupDataProvider() {
         person.add(new Person(1, "Nikita", "Ryadnov", "nik@mail.com", "xax", "12345"));
-        category.add(new Category(1, "Лексус"));
-        category.add(new Category(2, "Фольксваген"));
+        fetchCategory();
     }
 
     public List<Person> getPerson() {
@@ -26,5 +25,10 @@ public class MockupDataProvider implements IDataProvider {
     }
     public void addCategory(Category category){
         this.category.add(category);
+    }
+
+    private void fetchCategory() {
+        category.add(new Category(1, "Лексус"));
+        category.add(new Category(2, "Фольксваген"));
     }
 }
