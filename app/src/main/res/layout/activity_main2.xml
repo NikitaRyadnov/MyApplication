@@ -49,4 +49,5 @@
         android:onClick="regClick"
         android:text="Регистрация" />
 
+
 </LinearLayout>

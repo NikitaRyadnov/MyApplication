@@ -37,6 +37,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        if(v.getId() == R.id.category1)
+        {
+            Intent intent = new Intent(this, Main2Activity.class);
+            startActivity(intent);
+        }
         switch (v.getId()) {
             case R.id.sign_in:
                 if (data != null && data.getPerson() != null) {
@@ -57,10 +62,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //label.setText("Вход выполнен!");
                 Intent intent = new Intent(this, Main3Activity.class);
                 startActivity(intent);
-                break;
-            case R.id.category1:
-                Intent intent1 = new Intent(this, Main2Activity.class);
-                startActivity(intent1);
                 break;
         }
     }

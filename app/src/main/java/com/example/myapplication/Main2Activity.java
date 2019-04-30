@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,11 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
+        if(v.getId() == R.id.category1)
+        {
+            Intent intent = new Intent(this, Main3Activity.class);
+            startActivity(intent);
+        }
         String Sname = name.getText().toString();
         String Slname = lname.getText().toString();
         String Smail = mail.getText().toString();
