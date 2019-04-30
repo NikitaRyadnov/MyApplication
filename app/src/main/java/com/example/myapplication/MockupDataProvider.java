@@ -20,7 +20,7 @@ public class MockupDataProvider implements IDataProvider {
     public void addPerson(Person person){
         this.person.add(person);
     }
-
+//
     public List<Category> getCategory() {
         return category;
     }
